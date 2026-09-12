@@ -13,12 +13,12 @@
 <br/>
 
 <a href="https://www.devomnitools.com">
-  <img src="assets/omnitools-architecture.svg" alt="OmniTools Ecosystem &amp; Growth Architecture" width="100%" />
+  <img src="assets/omnitools-architecture.jpg" alt="OmniTools Ecosystem &amp; Growth Architecture" width="100%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);" />
 </a>
 
 <p align="center">
   <b>Official community hub, feature request tracker, and architectural blueprint for <a href="https://www.devomnitools.com">OmniTools</a>.</b><br/>
-  Free client-side utilities designed for modern software engineers, security analysts, and UI designers.
+  Free, instant, private client-side utilities designed for software engineers, security researchers, and UI designers.
 </p>
 
 [**🌐 Open OmniTools Web App**](https://www.devomnitools.com) &bull;
@@ -34,48 +34,23 @@
 ## 🔒 100% In-Browser Privacy Guarantee
 
 > **Your data never leaves your computer.**  
-> Unlike commercial utility platforms that transmit your sensitive database dumps, API keys, JSON payloads, or passwords across third-party backend servers, **OmniTools runs 100% locally in your browser memory**.
+> Unlike commercial utility platforms that transmit your database dumps, API keys, JSON payloads, or passwords across third-party backend servers, **OmniTools runs 100% locally in your browser memory**.
 >
 > * **Zero API calls** containing user input
 > * **Zero third-party tracking** or data-mining scripts
-> * **Native Web APIs** (`Web Cryptography API`, `Canvas API`, `FileReader`, and `Web Workers`)
-> * **Air-Gapped & Offline Capable:** Disconnect your Wi-Fi or airplane mode — the entire suite operates completely offline as an installable PWA.
+> * **Native Web APIs:** `Web Cryptography API`, `Canvas API`, `FileReader`, and `Web Workers`
+> * **Air-Gapped & Offline Capable:** Disconnect your Wi-Fi or enable airplane mode — the entire suite operates completely offline as an installable PWA.
 
 ---
 
-## 🏗️ Ecosystem & Growth Architecture
+## 🏗️ 4-Tier Ecosystem & Growth Architecture
 
-```mermaid
-graph TD
-  subgraph L1["🛡️ LAYER 1: Client-Side Sandbox (100% In-Browser Memory)"]
-    A["Web Cryptography Engine<br/>• AES-256-GCM authenticated cipher<br/>• Bcrypt hash &amp; salt work-factor<br/>• HMAC &amp; SHA-512 checksums"]
-    B["HTML5 Canvas 8K Engine<br/>• Vector SVG to PNG rasterizer (up to 8K)<br/>• QR Code with custom center logo<br/>• CSS Glassmorphism &amp; Flexbox visualizers"]
-    C["Local AST &amp; Data Parsers<br/>• SQL INSERT into JSON / CSV converter<br/>• JSON to TypeScript recursive interface<br/>• Bi-directional YAML, XML, Markdown"]
-  end
-
-  subgraph L2["⚡ LAYER 2: Global Edge CDN (Cloudflare Pages Network)"]
-    D["300+ Edge POPs<br/>• Sub-20ms global TTFB<br/>• HTTP/3 &amp; Brotli compression"]
-    E["242 Static Prerendered Pages<br/>• Zero server cold-start latency<br/>• Instant client-side hydration"]
-    F["Quad-Locale Global Distribution<br/>• English, Spanish, German, Arabic<br/>• Bi-directional RTL typography support"]
-  end
-
-  subgraph L3["🚀 LAYER 3: Omnichannel Traffic Flywheel"]
-    G["Programmatic SEO &amp; Schema<br/>• Automated multi-lingual sitemaps<br/>• JSON-LD FAQ &amp; SoftwareApplication schema<br/>• OpenGraph &amp; Twitter Card cards"]
-    H["Awesome Lists Backlinks<br/>• Brad Traversy (56K+ ⭐)<br/>• Marko Denic Web Dev Resources (6.5K+ ⭐)"]
-    I["Chrome &amp; Edge Web Store<br/>• Omnipresent 1-click browser HUD<br/>• Sticky daily retention"]
-    J["Developer Viral Loops<br/>• Reddit r/webdev launch threads<br/>• Twitter / X dev building-in-public updates"]
-  end
-
-  subgraph L4["💡 LAYER 4: Community Innovation Gateway"]
-    K["Public Issue Tracker<br/>• Community tool requests<br/>• Verified bug triage"]
-    L["Rapid Pipeline to 100+ Tools<br/>• Phase 5.1 &amp; Phase 5.2 expansion"]
-    M["100% Proprietary Code Privacy<br/>• Secure deployment pipeline<br/>• Zero sensitive source leaked"]
-  end
-
-  L3 --> L2
-  L2 --> L1
-  L4 --> L3
-```
+| Layer | Architecture Component | Core Technologies | Privacy & Speed Impact |
+| :--- | :--- | :--- | :--- |
+| **🛡️ Tier 1** | **Client Browser Sandbox** | WebCrypto API, Canvas 8K, Local AST Parsers | **100% Local Memory Execution.** Sensitive data is garbage-collected on tab close. Zero telemetry. |
+| **⚡ Tier 2** | **Cloudflare Global Edge** | 300+ Edge POPs, HTTP/3, Brotli, i18n Quad-Locale | **Sub-20ms TTFB globally.** 242 prerendered static pages with zero server cold starts. |
+| **🚀 Tier 3** | **Traffic Growth Flywheel** | Programmatic SEO, Awesome Lists, Chrome Extension | **Compounding Inbound Reach.** 56k+ Star GitHub authority backlinks and 1-click browser HUD. |
+| **💡 Tier 4** | **Community Hub** | GitHub Issue Templates, Public Roadmap, Community PRs | **Rapid Feature Pipeline.** Community-driven tool creation with 100% proprietary code privacy. |
 
 ---
 
